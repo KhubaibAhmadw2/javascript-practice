@@ -3,5 +3,3 @@ function avg(number1,number2){
     return a;
 }
 console.log(avg(4,6));
-//second function
-
