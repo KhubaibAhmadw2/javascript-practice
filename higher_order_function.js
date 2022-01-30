@@ -35,3 +35,22 @@ console.log(canDrink);
 //filter
 const retailCompanies=companies.filter(company=>company.category==="retail");
 console.log(retailCompanies);
+
+//map
+const ageMap= ages
+ .map(age=>Math.sqrt(age))
+ .map(age=>age*2);
+console.log(ageMap);
+
+//sort
+const sortedCompanies=companies.sort((a,b)=>(a.start>b.start?1:-1));
+console.log("sorted companies by start year"+sortedCompanies)
+//sort ages
+const sortAges=ages.sort((a,b)=>a-b);
+console.log(sortAges);
+
+
+//reduce
+
+const ageSum=ages.reduce((total,age)=>total+age,0);
+console.log("Age sum is :"+ageSum);
